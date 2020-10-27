@@ -1,5 +1,9 @@
 algorithm
+AI
 cybersecurity
 python
 Blockchain
 Robotics
+DataScience
+quantumcomputing
+bioquantum
