@@ -11,22 +11,14 @@ logger = logging.getLogger()
 
 print('This is a twitter bot')
 
-# CONSUMER_KEY = environ['CONSUMER_KEY']
-# CONSUMER_SECRET = environ['CONSUMER_SECRET']
-# ACCESS_KEY = environ['ACCESS_KEY']
-# ACCESS_SECRET = environ['ACCESS_SECRET']
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
 
-# auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-# auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-# api = tweepy.API(auth, wait_on_rate_limit=True)
-
-consumer_key = 'jjPiGCsj8Wk5wu7EqDPAqstsb'
-consumer_secret = 'Ed5ba1z2zjCevMtCFwNm3LxrcwdumzOOI6irsBq2RQkrUSUhfc'
-access_token = '1316692888550404097-69772k4vmEPgQt9G8ECASFqpBusRyT'
-access_token_secret = '5Hm4sdbJB4ScyRazWuppvmKSW89iAYmy8u3aG56BLdmsr'
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+api = tweepy.API(auth, wait_on_rate_limit=True)
 
 
 def retrieve_hastags(file_name):
